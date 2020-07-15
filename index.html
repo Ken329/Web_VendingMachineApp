@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav class="header-nav" id="navbar navbar-default">
+			<div id="container" class="head-nav">
+				<div id="myTitle">
+					Welcome to my Vending Machine
+				</div>
+				<div class="loginPage">
+					<span id="loginLogo" class="glyphicon glyphicon-user">USER</span>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="page">
+		<div class="toggle-btn" id="toggle">
+			<div id="mybtn"></div>
+			<button type="button" class="lg-button" onclick="login()">Login</button>
+			<button type="button" class="su-button" onclick="signup()">Sign Up</button>
+		</div>
+		<form id="login">
+			<input type="text" name="username" id="user" placeholder="Username" required>
+			<input type="password" name="password" id="pass" placeholder="Password" required>
+			<button type="button" class="login_button" onclick="login_check()">Login</button>
+		</form>
+		<form id="login" style="display: none;">
+			<input type="text" name="username" id="sg_user" placeholder="Username" required>
+			<input type="password" name="password" id="sg_pass" placeholder="Password" required>
+			<input type="password" name="password" id="cf_pass" placeholder="Confirm Password" required>
+			<button type="button" class="signup_button" onclick="signup_check()">Sign Up</button>
+		</form>
+	</div>
+	<div id="page-container" style="display: none;">
+	  	<div id="content-wrap">
+	  		<div class="drink drink-space">
+				<img src="coca.png" width="180">
+				<p class="name">Coca Cola</p>
+				<p class="price">$1.50</p>
+				<button class="mybutton" onclick="drink('f1')">f1</button>
+			</div>
+			<div class="drink drink-space">
+				<img src="coca.png" width="180">
+				<p class="name">Sprite</p>
+				<p class="price">$1.50</p>
+				<button class="mybutton" onclick="drink('f2')">f2</button>
+			</div>
+			<div class="drink drink-space">
+				<img src="coca.png" width="180">
+				<p class="name">Mountain Dew</p>
+				<p class="price">$1.50</p>
+				<button class="mybutton" onclick="drink('f4')">f4</button>
+			</div>
+			<div class="drink drink-space">
+				<img src="coca.png" width="180">
+				<p class="name">Coffee</p>
+				<p class="price">$2.50</p>
+				<button class="mybutton" onclick="drink('f3')">f3</button>
+
+			</div>
+			<div class="drink drink-space">
+				<img src="coca.png" width="180">
+				<p class="name">Fanta</p>
+				<p class="price">$2.50</p>
+				<button class="mybutton" onclick="drink('f5')">f5</button>
+			</div>
+			<div class="drink drink-space">
+				<img src="coca.png" width="180">
+				<p class="name">Juice</p>
+				<p class="price">$3.50</p>
+				<button class="mybutton" onclick="drink('f6')">f6</button>
+			</div>
+	  	</div>
+	   	<footer id="footer">
+	   		<div class="result">
+	   			<div class="ques-drink">
+		   			<p id="drink">Your drink is :<p1 id="mydrink"></p1></p>
+	   			</div>
+	   			<div class="ques-price">
+		   			<p id="price">Total ammount is :<p1 id="myprice"></p1></p>
+	   			</div>
+	   		</div>
+	   	</footer>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script>
+		$('.su-button').click(function(){
+			$('form').animate({height:"toggle",opacity:"toggle"},"slow");
+		});
+		$('.lg-button').click(function(){
+			$('form').animate({height:"toggle",opacity:"toggle"},"slow");
+		});
+	</script>
+</body>
+</html>

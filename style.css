@@ -1,0 +1,174 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-size: 20px;
+}
+.header-nav{
+	background-color: #F2543F;
+	height: 120px;
+}
+#container{
+	width: 1000px;
+	margin: auto;
+}
+#container a{
+	text-decoration: none;
+}
+#myTitle{
+	margin-top: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+	color: black;
+}
+.loginPage{
+	position: absolute;
+	right: 20%;
+	top: 6%;
+}
+#page{
+	border: 1px solid black;
+	box-shadow: 0 0 20px 9px #ED2E31;
+	width: 250px;
+	height: 350px;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+}
+.toggle-btn{
+	width: 220px;
+	height: 40px;
+	text-align: center;
+	position: relative;
+	top: 15px;
+	left: 15px;
+	box-shadow: 0 0 20px 9px #ED2E31;
+	border-radius: 30px;
+}
+.lg-button, .su-button{
+	font-size: 15px;
+	position: relative;
+	right: 20px;
+	margin-top: 10px;
+	margin-left: 50px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+}
+.lg-button:focus, .su-button:focus{
+	outline: none;
+}
+#mybtn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right,#ED2E31,#F1585A);
+	border-radius: 30px;
+	transition: .5s;
+}
+#user, #pass{
+	width: 200px;
+	border-radius: 24px;
+	border-width: 0;
+	border: 2px solid #ED2E31;
+	height: 40px;
+	text-align: center;
+}
+#user{
+	margin-top: 60px;
+}
+#pass{
+	margin-top: 20px;
+}
+#user:focus, #pass:focus{
+	outline: none;
+}
+#sg_user, #sg_pass, #cf_pass{
+	width: 200px;
+	border-radius: 24px;
+	border-width: 0;
+	border: 2px solid #ED2E31;
+	height: 40px;
+	text-align: center;
+}
+#sg_user{
+	margin-top: 60px;
+}
+#sg_pass{
+	margin-top: 20px;
+}
+#cf_pass{
+	margin-top: 20px;
+}
+#sg_user:focus, #sg_pass:focus, #cf_pass:focus{
+	outline: none;
+}
+.login_button{
+	margin-top: 85px;
+	border-radius: 24px;
+	border-width: 0;
+	background-color: #ED2E31;
+}
+.signup_button{
+	margin-top: 35px;
+	border-radius: 24px;
+	border-width: 0;
+	background-color: #ED2E31;
+}
+.signup_button:focus{
+	outline: none;
+}
+.login_button:focus{
+	outline: none;
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  display: none;
+}
+
+#content-wrap {
+	width: 1200px;
+	margin: auto;
+	padding-bottom: 2.5rem;    /* Footer height */
+}
+.drink-space{
+	float: left;
+	padding-top: 30px;
+	text-align: center;
+	margin: 20px 30px 20px 30px;
+}
+.mybutton{
+	border-radius: 50%;
+	border-width: 0; 
+	background-color: #F2543F;
+	color: black;
+}
+.mybutton:focus{
+	outline: none;
+}
+.mybutton:active{
+	font-size: 15px;
+	background-color: white;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;            /* Footer height */
+  background-color: #F2543F;
+}
+.result{
+	width: 500px;
+	margin: auto;
+	margin-top: 10px;
+}
+#mydrink{
+	margin-left: 20px;
+}
+#myprice{
+	margin-left: 20px;
+}
